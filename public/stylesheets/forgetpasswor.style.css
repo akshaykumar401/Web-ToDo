@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  border-radius: none;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #2D3250;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  height: 95%;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container {
+  height: 90%;
+  width: 45%;
+  background-color: #fff;
+  overflow: hidden;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container > img {
+  height: 80%;
+  width: 80%;
+  filter: drop-shadow(0 0 2px #000);
+}
+
+.container {
+  height: 90%;
+  width: 45%;
+  background-color: #fff;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  height: 30rem;
+  width: 22rem;
+  background-color: #2D3250;
+  border-radius: 15px;
+  padding: 1rem;
+  box-shadow: 0 0 40px rgb(20, 234, 173);
+}
+
+.heading {
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+form {
+  padding-top: 2rem;
+  width: 95%;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  color: #2D3250;
+  gap: 2rem;
+  justify-content: start;
+  align-items: center;
+}
+
+
+input {
+  width: 85%;
+  outline: none;
+  padding: 0.5rem;
+  font-size: 17px;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #FFF;
+  border: 2px solid lightsteelblue;
+}
+
+.password-div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 1.8rem;
+}
+
+#eye {
+  position: relative;
+  width: none;
+  right: 2rem;
+  cursor: pointer;
+}
+
+#submit {
+  background-color: blue;
+  color: #FFF;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  width: 90%;
+  border: none;
+  transition: all .3s;
+}
+
+#submit:active {
+  scale: 0.9;
+}
+
+.msg {
+  text-align: end;
+  font-size: 1.1rem;
+  padding-right: 2rem;
+}
+
+.msg > a {
+  color: rgb(3, 57, 252);
+  font-size: 1.1rem;
+}

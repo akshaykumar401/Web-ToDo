@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home ToDo | Forget Password</title>
+  <link rel="web icon" href="/images/ICON.jpeg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/stylesheets/conform.style.css">
+</head>
+<body>
+  <section>
+    <div class="container">
+      <div class="form">
+        <h2 class="heading">Conform You</h2>
+
+        <!-- Conform The User -->
+        <div class="conform-div">
+          <div class="avatar">
+            <img src="<%= (user.avatar === 'default.jpeg') ? '/images/uploads/default.jpeg' : user.avatar %>" alt="">
+
+          </div>
+          <p>Name: <%= user.fullname  %></p>
+          <p>username: <%= user.username  %></p>
+
+          <a href="/changepass/<%= user._id %>" id="conform">Conform</a>
+        </div>
+
+        <p class="msg">Already Have an account? <a href="/signup">SignUp</a></p>
+      </div>
+    </div>
+
+
+    <div class="image-container">
+      <img src="/images/signup.png" alt="">
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home ToDo | Change Avatar</title>
+  <link rel="web icon" href="/images/ICON.jpeg">
+  <link rel="stylesheet" href="/stylesheets/changeAvatar.style.css">
+</head>
+<body>
+  <section>
+    <form action="/user/change-avatar" method="post" enctype="multipart/form-data">
+      <h2 id="heading">Upload Avatar</h2>
+      <label for="avatar" id="avatarLabel">
+        Upload / Drag The File
+        <input type="file" id="avatar" name="avatar" accept="images/*" required onchange="uploadImage()"/>
+      </label>
+      <img src="" class="avatarSample">
+
+      <input type="submit" id="submit" value="Update">
+    </form>
+  </section>
+
+  <script src="/javascripts/displayAvatar.js"></script>
+</body>
+</html>

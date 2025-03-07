@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit ToDo | Home Todo</title>
+  <link rel="web icon" href="/images/ICON.jpeg" type="jpeg">
+  <link rel="stylesheet" href="/stylesheets/editTodo.style.css">
+</head>
+<body>
+  <section>
+    <div class="addTodo-form">
+      <h2 id="createHead">Update ToDo</h2>
+      <form action="/user/updateTodo/<%= id %>" method="post">
+        <input type="text" name="title" placeholder="Title of Todo" value="<%= todo.title %>">
+        <input type="text" name="content" placeholder="What you need to do" value="<%= todo.content %>">
+        <label for="color" id="color-label"> Choose BackGround Color: 
+          <input type="color" name="color" value="<%= todo.backgroundColor %>">
+        </label>
+
+        <input type="submit" id="submit" value="Add Todo">
+      </form>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home ToDo | Update Account Detail</title>
+  <link rel="web icon" href="/images/ICON.jpeg">
+  <link rel="stylesheet" href="/stylesheets/updateAccountDetail.style.css">
+</head>
+<body>
+  <section>
+    <div class="image-container">
+      <img src="/images/update.jpeg" alt="">
+    </div>
+
+    <div class="container">
+      <div class="form">
+        <h2 class="heading">Update Account</h2>
+        
+        <form action="/user/updateDetail" method="post">
+          <input type="text" name="fullname" class="fullname" placeholder="New Fullname" value="<%= user.fullname %>" required>
+          <input type="text" name="username" class="username" placeholder="New Username" value="<%= user.username %>" required>
+          
+          <input type="submit" value="Update" id="submit">
+        </form>
+        
+      </div>
+    </div>
+  </section>
+</body>
+</html>

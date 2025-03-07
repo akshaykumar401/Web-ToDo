@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home ToDo | Dashboard</title>
+  <link rel="web icon" href="/images/ICON.jpeg" type="images/jpeg">
+  <link rel="stylesheet" href="/stylesheets/dashboard.style.css">
+</head>
+<body>
+  <nav>
+    <h1>Home ToDo</h1>
+
+    <ul>
+      <li id="avatar-list">
+        <img id="avatar" src="<%= (user.avatar === 'default.jpeg') ? '/images/uploads/default.jpeg' : user.avatar %>" />
+        <p><%= user.fullname %></p>
+      </li>
+      <li><a href="/user/dashboard">Home</a></li>
+      <li><a href="/user/updatedetail">Update Acc</a></li>
+      <li><a href="/user/change-avatar">Change Profile</a></li>
+      <li><a href="/logout">Logout</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="cards">
+      <% if(todo.length > 0) { %>
+        <% todo.forEach(function(todo) { %>
+          
+          <div class="card" style="background-color: <%= todo.backgroundColor %>" >
+            <h2><%= todo.title %></h2>
+            <p><%= todo.content %></p>
+  
+            <div class="btns">
+              <a href="/user/edit/<%= todo.id %>" class="edit">Edit</a>
+              <a href="/user/delete/<%= todo.id %>" class="delete">Delete</a>
+            </div>
+          </div>
+
+        <% }) %>
+      <% }%>
+
+      <button class="add">+</button>
+    </div>
+
+    <div class="addTodo-form">
+      <h2 id="createHead">Create ToDo</h2>
+      <form action="/user/create-todo" method="post">
+        <input type="text" name="title" placeholder="Title of Todo">
+        <input type="text" name="content" placeholder="What you need to do">
+        <label for="color" id="color-label"> Choose BackGround Color: 
+          <input type="color" name="color" value="#C5BAFF">
+        </label>
+
+        <input type="submit" id="submit" value="Add Todo">
+      </form>
+    </div>
+  </main>
+
+  <script src="/javascripts/addTodo.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home ToDo | Login</title>
+  <link rel="web ICON" href="images/ICON.jpeg" type="jpeg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/stylesheets/login.style.css">
+</head>
+<body>
+  <section>
+    <div class="image-container">
+      <img src="/images/Login.jpeg" alt="">
+    </div>
+
+    <div class="container">
+      <div class="form">
+        <h2 class="heading">Login</h2>
+        
+        <form action="/login" method="post">
+          <input type="email" name="email" class="email" placeholder="email" required>
+          
+          <div class="password-div">
+            <input type="password" name="password" class="password" placeholder="password" required>
+            <i class="fa-solid fa-eye" id="eye"></i>
+          </div>
+          
+          <input type="submit" value="Login" id="submit">
+        </form>
+        
+        <p class="msg">Doesn't Have an account? <a href="/signup">SignUp</a></p>
+        <p class="msg">forget password? <a href="/forgetpassword">forgetpassword</a></p>
+      </div>
+    </div>
+  </section>
+
+  <script src="/javascripts/eyeFunction.js"></script>
+</body>
+</html>
+
+
+
+<!-- <i class="fa-solid fa-eye-slash"></i> -->

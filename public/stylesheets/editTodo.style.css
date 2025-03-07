@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  border-radius: none;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #2D3250;
+  color: #FFF;
+}
+
+.addTodo-form {
+  position: absolute;
+  bottom: calc(100vh - 80vh);
+  left: calc(100% - 62%);
+  height: 27rem;
+  width: 21rem;
+  border-radius: 15px;
+  background-color: rgb(83, 51, 39);
+  box-shadow: 0 0 20px greenyellow;
+}
+
+#createHead {
+  text-align: center;
+  padding-top: 1.5rem;
+  font-size: 2.3rem;
+}
+
+.addTodo-form > form {
+  padding-top: 2rem;
+  width: 95%;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  color: #2D3250;
+  gap: 2rem;
+  justify-content: start;
+  align-items: center;
+}
+
+
+.addTodo-form > form > input {
+  width: 85%;
+  outline: none;
+  padding: 0.5rem;
+  font-size: 17px;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #FFF;
+  border: 2px solid lightsteelblue;
+}
+
+
+#submit {
+  background-color: yellow;
+  color: #000;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  width: 90%;
+  border: none;
+  transition: all .3s;
+}
+
+
+#color-label {
+  color: #FFF;
+  font-size: 1.2rem;
+  text-align: start;
+}
+
+#color-label > input {
+  width: 3rem;
+  height: 2rem;
+  border: none;
+  background-color: transparent;
+}
